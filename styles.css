@@ -1,0 +1,154 @@
+:root {
+  --white: #f9faf8;
+  --dark-blue: #1f2937;
+  --light-blue: #3882f6;
+  --grey: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  min-width: 600px;
+}
+body {
+}
+
+nav {
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 10%;
+  position: fixed;
+  width: 100%;
+}
+nav,
+nav a {
+  color: var(--white);
+}
+nav p {
+  font-weight: 800;
+  font-size: large;
+}
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+nav ul {
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+}
+.intro {
+  padding: 20% 10%;
+  padding-bottom: 15%;
+  background-color: var(--dark-blue);
+  display: flex;
+  gap: 30px;
+}
+.intro > div {
+  flex-basis: 50%;
+  justify-content: center;
+}
+.img {
+  background-color: grey;
+  display: flex;
+  place-items: center;
+  box-shadow: inset 0px 0px 10px 5px;
+  border-radius: 10px;
+}
+.white {
+  color: var(--white);
+}
+.intro > .text * {
+  margin-top: 10px;
+}
+
+button {
+  border-radius: 5px;
+  width: 80px;
+  height: 25px;
+  background-color: var(--light-blue);
+  border: 0;
+  font-weight: 600;
+}
+.info {
+  padding: 5% 10%;
+  text-align: center;
+}
+.info .items {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  justify-content: space-between;
+  padding: 0 15%;
+}
+.infoitem .image {
+  height: 100px;
+  width: inherit;
+  border-radius: 10px;
+  display: flex;
+  place-items: center;
+  border: solid 2px var(--light-blue);
+}
+.infoitem {
+  width: 100px;
+}
+.infoitem p {
+  margin-top: 5px;
+  font-weight: 300;
+}
+.quote {
+  height: 20rem;
+  padding: 0 10%;
+  background-color: var(--grey);
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+.quote p {
+  font-size: 3rem;
+  font-style: italic;
+}
+.call {
+  height: 20rem;
+  padding: 0 10%;
+  display: flex;
+  place-items: center;
+}
+.callblue {
+  height: 7rem;
+  background-color: var(--light-blue);
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  padding: 0 15%;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 80px;
+}
+.calltext p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+.calltext h4 {
+  margin-bottom: -15px;
+  padding: 0;
+}
+.callblue button {
+  border: solid white 1px;
+}
+
+footer {
+  padding: 2% 10%;
+  background-color: var(--dark-blue);
+  text-align: center;
+  font-size: small;
+  font-style: italic;
+}
